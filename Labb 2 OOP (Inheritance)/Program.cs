@@ -10,11 +10,21 @@ namespace Labb_2_OOP__Inheritance_
         public string NumberOfLegs;
         public string NumberOfEyes;
 
+        public Djur(string name, string age, string color, string numberoflegs, string numberofeyes)
+        {
+            this.Name = name;
+            this.Age = age;
+            this.Color = color;
+            this.NumberOfLegs = numberoflegs;
+            this.NumberOfEyes = numberofeyes;
+        }
+
+
         public virtual void MakeSound()
         {
             Console.WriteLine("Some sort of animal sound");
         }
-          public virtual void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine("Nom Nom");
         }
@@ -27,7 +37,6 @@ namespace Labb_2_OOP__Inheritance_
     }
     public class Dog : Djur
     {
-
         public string CollarColor;
 
         public void Commands()
@@ -95,7 +104,7 @@ namespace Labb_2_OOP__Inheritance_
 
         public override void MakeSound()
         {
-            Console.WriteLine("Golden Retriver Says: Woof Woof");
+            Console.WriteLine("Golden Retriver Says: Woofity Woofity");
         }
     }
 
